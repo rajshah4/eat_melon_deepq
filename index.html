@@ -710,9 +710,9 @@
    <p>
    This demo is a fun way to gain familiarity with the Deep Q Learning algorithm. It is based off Karpathy's 
 <a href="http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html">ConvNetJS Deep Q Learning Demo</a> 
-    with some tweaks on the UI side. You can fiddle with reward and model parameters, see how that affects the agent, which should give you a feel for how Deep Q learning works. The Deep Q learning algorithms are best known for learning to play Atari games. You can check out the original<a href="http://arxiv.org/pdf/1312.5602v1.pdf">paper</a> or train models on the Atari games using <a href="https://gym.openai.com/envs#atari">OpenAI's</a> tools. 
+    with some tweaks on the UI side. You can fiddle with reward and model parameters, see how that affects the agent, which should give you a feel for how Deep Q learning works. The Deep Q learning algorithms are best known for learning to play Atari games. You can check out the original <a href="http://arxiv.org/pdf/1312.5602v1.pdf">paper</a> or train models on the Atari games using <a href="https://gym.openai.com/envs#atari">OpenAI's</a> tools. 
 <p>
-    More detailed guidelines are below (or watch a demo video).  Please remember to reload the network after making changes to the reward or model parameters. The agent takes about fifteen minutes to train with the current settings. If you're impatient, scroll down and load an example pre-trained network from pre-filled JSON.
+    More detailed guidelines are below (or watch a <a href="https://youtu.be/3TUZw1rlvXc">demo video</a>).  Please remember to reload the network after making changes to the reward or model parameters. The agent takes about fifteen minutes to train with the current settings. If you're impatient, scroll down and load an example pre-trained network from pre-filled JSON.
    
    <h1>State Visualizations</h1>
    
@@ -790,13 +790,13 @@
     <p>
     Karpathy designed three ways to reward the agent. It can earn a reward for learning to go forward as well as for avoiding the walls. The third way is the most fun. You can reward it for eating watermelon and give it a negative reward for eating poop! (Hacking on this with a 10 year old nearby led to the food choices here, although her first choice was a unicorn eating rainbow candy.) You can find sliders for controlling all three of these behaviors.
     <p>
-    The Deep Q learning algorithm has a number of settings that can also be tweaked. The Epsilon setting tells the agent what percent of the time to try some random action. The model current starts at 1 and slowly drops down until it reaches the setting set by the range provider. The Gamma setting determines how much the agent values immediate rewards. A high gamma means more attention is given to far away goals. In the models playing Atari, these were typically set close to 1. The numbers shown by the slider are divided by 100 before they are used in the algorithm.
+    The Deep Q learning algorithm has a number of settings that can also be tweaked. The epsilon setting tells the agent what percent of the time to try some random action. The model current starts at 1 and slowly drops down until it reaches the epsilon setting. The gamma setting determines how much the agent values immediate rewards. A high gamma means more attention is given to far away goals. In the models playing Atari, gamma was typically set close to 1. The numbers shown by the slider are divided by 100 before they are used in the algorithm.
     <p>
     To ensure your changes to the model apply, you should click the reload button. This will start the model over. Below the reload button is a textfield that gets eval()'d to produce the Q-learner for this demo. In this space you can adjust other parameters and settings. As an example, I have put in a variable for the number of food items created.
     <p>
     To save your model, use the save network to JSON button. Additionally, this allows you to start using a pretrained network. This can be useful if you have trained the agent for a particular behavior.
     <p>
-    The code for this demo is available on <a href="https://github.com/rajshah4/eat_melon_deepq">github</a>. Additionally, I have made a behind the scenes video where I walk through the code and summarize changes I made (and try to explain why the graphics looks crappy).  There are lots more tweaks and improvements that can be done.  Do it!  Its a great way to start getting a feel for reinforcement learning. 
+    The code for this demo is available on <a href="https://github.com/rajshah4/eat_melon_deepq">github</a>. Additionally, I have made a behind the scenes video where I walk through the code and summarize changes I made (and explain why the graphics look crappy).  There are lots more tweaks and improvements that can be done.  Do it!  Its a great way to start getting a feel for reinforcement learning. 
     <p>
     Some fun things to try:
     <p>
